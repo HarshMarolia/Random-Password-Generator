@@ -1,0 +1,30 @@
+body{
+    margin-top: 20%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    background: linear-gradient(to right, #9c27b0, #8ecdff);
+}
+
+p{
+    font-family: cursive;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+input{
+    border-radius: 5px;
+    margin-bottom: 20px;
+    text-align: center;
+    padding: 10px;
+}
+
+div{
+    padding: auto;
+}
+
+button{
+    margin-left: 20px;
+}
