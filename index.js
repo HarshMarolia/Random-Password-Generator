@@ -8,10 +8,10 @@ button.addEventListener('click', () => {
 
 });
 
-btn.addEventListener('click', ()=>{
+btn.addEventListener('click', () => {
     copytext.select();
     document.execCommand("copy");
-    alert("Password Copied to clipboard!");
+    swal("Success", "Password copied to clipboard", {icon: "success",});
 });
 
 function Generatepass(length = 16) {
