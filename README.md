@@ -1,7 +1,5 @@
 # Random-Password-Generator
-> A simple application that generates random passwords with a copy to clipboard feature.
-
-Elements in beautiful READMEs include, but are not limited to: images, screenshots, GIFs, text formatting, etc.
+ A simple application that generates random passwords with a copy to clipboard feature.
 
 ## Usage
 
