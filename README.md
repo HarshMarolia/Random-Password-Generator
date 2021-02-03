@@ -3,7 +3,7 @@
 
 ## Usage
 
-Open this application in your browser. Then, simply click the _Generate Password_ button and it will generate a random password of 16 characters. In order to use this password click the _Copy Button_ and the password will be copied to your clipboard.
+Open this application in your browser. Then, enter the length of password you wish to generate and simply click the _Generate Password_ button and it will generate a random password of desired length entered. In order to use this password click the _Copy Button_ and the password will be copied to your clipboard.
 
 ### Link
 
