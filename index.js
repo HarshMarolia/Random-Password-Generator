@@ -3,18 +3,20 @@ const button = document.querySelector('button');
 const copytext = document.querySelector('#copyText');
 const btn = document.querySelector('#btn');
 
-button.addEventListener('click', () => {
-    input.value = Generatepass(16);
+var l = 0;
 
+button.addEventListener('click', () => {
+    l = document.getElementById("num").value;
+    input.value = Generatepass(l);
 });
 
 btn.addEventListener('click', () => {
     copytext.select();
     document.execCommand("copy");
-    swal("Success", "Password copied to clipboard", {icon: "success",});
+    swal("Success", "Password copied to clipboard", { icon: "success", });
 });
 
-function Generatepass(length = 16) {
+function Generatepass(length = l) {
     const set1 = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789@#$';
     let pass = '';
     for (let i = 0; i < length; ++i) {

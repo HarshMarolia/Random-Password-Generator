@@ -29,3 +29,22 @@ div{
 button{
     margin-left: 20px;
 }
+
+.input-group{
+    align-self: center;
+    justify-content: center;
+    margin: 20px;
+}
+
+.input-group-text{
+    height: 40px;
+    margin-right: 20px;
+    border: 1px solid #ced4da; */
+    border-radius: .25rem;
+}
+
+.length{
+    width: 70px;
+    height: 40px;
+    margin-left: 10px;
+}
