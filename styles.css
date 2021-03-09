@@ -57,7 +57,7 @@ button{
     height: 5%;
     width:100%;
     position:absolute;
-    bottom:0;
+    bottom: -80px;
     left:0;
     background: #015871;
   }
