@@ -13,7 +13,9 @@ upbtn.onclick = function () {
 }
 downbtn.onclick = function () {
     l = document.getElementById("num").value;
+    if(l>0){
     document.getElementById("num").value = --l;
+    }
 }
 
 button.addEventListener('click', () => {
