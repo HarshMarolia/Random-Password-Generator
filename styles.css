@@ -117,23 +117,20 @@ input{
 }
 
 .controls{
-  position: absolute;
-  right: 39%;
-  top: 30%;
-  transform: translateY(-50%);
+  transform: translateY(-18%);
   text-align: center;
-}
-.controls h3{
-  color: #fff;
+  align-items: center;
 }
 
 #upbtn{
   width: 15px;
   cursor: pointer;
+  margin-left: 10px;
   transform: rotate(180deg);
 }
 #downbtn{
   width: 15px;
+  margin-left: 10px;
   cursor: pointer;
 }
 
