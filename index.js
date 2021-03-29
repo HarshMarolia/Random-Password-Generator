@@ -2,8 +2,19 @@ const input = document.querySelector('input');
 const button = document.querySelector('button');
 const copytext = document.querySelector('#copyText');
 const btn = document.querySelector('#btn');
+var upbtn = document.getElementById("upbtn");
+var downbtn = document.getElementById("downbtn");
 
 var l = 0;
+
+upbtn.onclick = function () {
+    l = document.getElementById("num").value;
+    document.getElementById("num").value = ++l;
+}
+downbtn.onclick = function () {
+    l = document.getElementById("num").value;
+    document.getElementById("num").value = --l;
+}
 
 button.addEventListener('click', () => {
     l = document.getElementById("num").value;

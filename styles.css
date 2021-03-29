@@ -64,7 +64,7 @@ input{
 }
 
 .inner-header {
-  height:85vh;
+  height:68vh;
   width:100%;
   margin: 0;
   padding: 0;
@@ -115,6 +115,28 @@ input{
   animation-delay: -5s;
   animation-duration: 20s;
 }
+
+.controls{
+  position: absolute;
+  right: 39%;
+  top: 30%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+.controls h3{
+  color: #fff;
+}
+
+#upbtn{
+  width: 15px;
+  cursor: pointer;
+  transform: rotate(180deg);
+}
+#downbtn{
+  width: 15px;
+  cursor: pointer;
+}
+
 @keyframes move-forever {
   0% {
    transform: translate3d(-90px,0,0);
