@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Random Password generator</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
@@ -10,24 +11,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 
-<body>
-    <p>Random Password Generator</p>
-    <input id="copyText" type="text" placeholder="" size=30 readonly>
-    <div class="input-group">
-        <span class="input-group-text"> Set Password length </span>
-        <input type="number" class="length" id="num">
-    </div>
-    <div>
-        <button class="btn btn-danger btn-lg">Generate Password</button>
-        <button class="btn btn-light btn-lg" id="btn"><i class="fas fa-copy"></i></button>
-    </div>
-    <div class="ocean">
-        <div class="wave"></div>
-        <div class="wave"></div>
-      </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
-    <script src="index.js"></script>
 </body>
+<div class="header">
+    <!--Content before waves-->
+    <div class="inner-header flex">
+        <div>
+            <h1>Random Password Generator</h1>
+            <br><br>
+            <input id="copyText" type="text" placeholder="" size=30 readonly>
+        </div>
+        <div class="input-group">
+            <span class="input-group-text"> Set Password length </span>
+            <input type="number" class="length" id="num">
+        </div>
+        <div>
+            <button class="btn btn-danger btn-lg">Generate Password</button>
+            <button class="btn btn-light btn-lg" id="btn"><i class="fas fa-copy"></i></button>
+        </div>
+    </div>
+
+    <!--Waves Container-->
+    <div>
+        <svg class="waves" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28" preserveAspectRatio="none" shape-rendering="auto">
+            <defs>
+                <path id="gentle-wave" d="M-160 44c30 0 58-18 88-18s 58 18 88 18 58-18 88-18 58 18 88 18 v44h-352z" />
+            </defs>
+            <g class="parallax">
+                <use xlink:href="#gentle-wave" x="48" y="0" fill="rgba(255,255,255,0.7" />
+                <use xlink:href="#gentle-wave" x="48" y="3" fill="rgba(255,255,255,0.5)" />
+                <use xlink:href="#gentle-wave" x="48" y="5" fill="rgba(255,255,255,0.3)" />
+                <use xlink:href="#gentle-wave" x="48" y="7" fill="#fff" />
+            </g>
+        </svg>
+    </div>
+    <!--Waves end-->
+
+</div>
+
+<div class="content flex">
+    <h2>@Harsh Marolia</h2>
+</div>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+<script src="index.js"></script>
+
+<body>
 
 </html>
