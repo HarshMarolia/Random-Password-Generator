@@ -15,6 +15,17 @@ h1 {
   font-size:48px;
 }
 
+.glass{
+  background: rgba( 239, 238, 238, 0.10 );
+  box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+  backdrop-filter: blur( 12.5px );
+  -webkit-backdrop-filter: blur( 12.5px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  padding: 60px;
+  margin: 30px;
+}
+
 p {
   font-family: 'Lato', sans-serif;
   letter-spacing: 1px;
