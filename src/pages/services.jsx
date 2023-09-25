@@ -1,12 +1,12 @@
-// Services Pages
-
-import { Avatar, Typography, Button } from "@material-tailwind/react";
-import {
-  MapPinIcon,
-  BriefcaseIcon,
-  BuildingLibraryIcon,
-} from "@heroicons/react/24/solid";
+import { Card, CardBody, CardHeader, Avatar, Typography, Button } from "@material-tailwind/react";
+import React from "react";
 import { Footer } from "@/widgets/layout";
+import { UsersIcon } from "@heroicons/react/24/solid";
+import service1 from '../img/image1.jpg';
+import service2 from '../img/image3.jpg';
+import service3 from '../img/fasal.png';
+import { ImgWithRoundedCorners } from "@/widgets/layout/imgWithRoundedCorners";
+
 
 export function Services() {
   return (
@@ -24,7 +24,7 @@ export function Services() {
                   <div className="relative">
                     <div className="-mt-20 w-40">
                       <Avatar
-                        src="/img/team-2.jpg"
+                        src="/img/bhoomilogo.jpg"
                         alt="Profile picture"
                         variant="circular"
                         className="h-full w-full shadow-xl"
@@ -32,95 +32,92 @@ export function Services() {
                     </div>
                   </div>
                 </div>
-                <div className="mt-10 flex w-full justify-center px-4 lg:order-3 lg:mt-0 lg:w-4/12 lg:justify-end lg:self-center">
-                  <Button className="bg-blue-400">Conntect</Button>
-                </div>
-                <div className="w-full px-4 lg:order-1 lg:w-4/12">
-                  <div className="flex justify-center py-4 pt-8 lg:pt-4">
-                    <div className="mr-4 p-3 text-center">
-                      <Typography
-                        variant="lead"
-                        color="blue-gray"
-                        className="font-bold uppercase"
-                      >
-                        22
-                      </Typography>
-                      <Typography
-                        variant="small"
-                        className="font-normal text-blue-gray-500"
-                      >
-                        Friends
-                      </Typography>
-                    </div>
-                    <div className="mr-4 p-3 text-center">
-                      <Typography
-                        variant="lead"
-                        color="blue-gray"
-                        className="font-bold uppercase"
-                      >
-                        10
-                      </Typography>
-                      <Typography
-                        variant="small"
-                        className="font-normal text-blue-gray-500"
-                      >
-                        Photos
-                      </Typography>
-                    </div>
-                    <div className="p-3 text-center lg:mr-4">
-                      <Typography
-                        variant="lead"
-                        color="blue-gray"
-                        className="font-bold uppercase"
-                      >
-                        89
-                      </Typography>
-                      <Typography
-                        variant="small"
-                        className="font-normal text-blue-gray-500"
-                      >
-                        Comments
-                      </Typography>
-                    </div>
-                  </div>
-                </div>
               </div>
               <div className="my-8 text-center">
                 <Typography variant="h2" color="blue-gray" className="mb-2">
-                  Jenna Stones
+                  Services
                 </Typography>
-                <div className="mb-16 flex items-center justify-center gap-2">
-                  <MapPinIcon className="-mt-px h-4 w-4 text-blue-gray-700" />
-                  <Typography className="font-medium text-blue-gray-700">
-                    Los Angeles, California
-                  </Typography>
-                </div>
-                <div className="mb-2 flex items-center justify-center gap-2">
-                  <BriefcaseIcon className="-mt-px h-4 w-4 text-blue-gray-700" />
-                  <Typography className="font-medium text-blue-gray-700">
-                    Solution Manager - Creative Tim Officer
-                  </Typography>
-                </div>
-                <div className="mb-2 flex items-center justify-center gap-2">
-                  <BuildingLibraryIcon className="-mt-px h-4 w-4 text-blue-gray-700" />
-                  <Typography className="font-medium text-blue-gray-700">
-                    University of Computer Science
-                  </Typography>
-                </div>
               </div>
-
               <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">
-                <div className="mt-2 flex flex-wrap justify-center">
+                {/* <div className="mt-2 flex flex-wrap justify-center">
                   <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
                     <Typography className="mb-8 font-normal text-blue-gray-500">
-                      An artist of considerable range, Jenna the name taken by
-                      Melbourne-raised, Brooklyn-based Nick Murphy writes,
-                      performs and records all of his own music, giving it a
-                      warm, intimate feel with a solid groove structure. An
-                      artist of considerable range.
+                    Bhoomi AI Solutions is a tech startup with its root in rural India. Our team members have 10 years of work experience in Web 3.0, Blockchain, and large-scale AI model deployment.
                     </Typography>
-                    <Button variant="text">Show more</Button>
                   </div>
+                </div> */}
+              </div>
+
+              <div className="mt-10 flex flex-wrap items-center ">
+                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+                  <img
+                    className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+                    src={service1}
+                    alt="nature image"
+                  />
+                </div>
+                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
+                  <Typography
+                    variant="h3"
+                    className="mb-3 font-bold"
+                    color="blue-gray"
+                  >
+                    Pest Check List
+                  </Typography>
+                  <Typography className="mb-8 font-normal text-blue-gray-500">
+                    Fill out the details and upload images of Pest on our Google Form or WhatsApp to get a detailed assessment on nature of pest, insect affecting your farm. Also, our report includes nature and quantity of Pesticide treatment to solve your problem.
+                  </Typography>
+                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7"><Button variant="outlined">Please fill the form</Button></a>
+                </div>
+              </div>
+              {/* Service 2 */}
+              <div className="mt-24 flex flex-wrap items-center">
+                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+                  <img
+                    className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+                    src={service2}
+                    alt="nature image"
+                  />
+                </div>
+                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
+                  <Typography
+                    variant="h3"
+                    className="mb-3 font-bold"
+                    color="blue-gray"
+                  >
+                    Crop Health Check
+                  </Typography>
+                  <Typography className="mb-8 font-normal text-blue-gray-500">
+                    With our AI/ML program and vast database of crop yield, we can do accurate assessment of the crop yield for your Crop.
+                    Upload few images and share the details of the crop location, soil, etc. to get accurate estimation.
+                  </Typography>
+                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7"><Button variant="outlined">Please fill the form</Button></a>
+                </div>
+              </div>
+              {/* Service 3 */}
+              <div className="mt-24 mb-10 flex flex-wrap items-center">
+                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+                  <img
+                    className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
+                    src={service3}
+                    alt="nature image"
+                  />
+                </div>
+                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
+                  <Typography
+                    variant="h3"
+                    className="mb-3 font-bold"
+                    color="blue-gray"
+                  >
+                    BUY INSURANCE FOR YOUR CROP
+                  </Typography>
+                  <Typography className="mb-8 font-normal text-blue-gray-500">
+                    Crop insurance is essential for Doubling Farmers Income. We aim to enable every farmers to purchase crop insurance.
+                    <br />
+                    <br />
+                    Our team developing a scientific assessment for crop damage assessment. It includes handholding support to farmers in linking to crop insurance companies.
+                  </Typography>
+                  <a href="https://pmfby.gov.in/"><Button variant="outlined">Purchase Crop Insurance</Button></a>
                 </div>
               </div>
             </div>
