@@ -1,6 +1,7 @@
 import React from "react";
 import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
+import { CircularImg } from "./circularImg";
 import {
   Navbar as MTNavbar,
   MobileNav,
@@ -63,11 +64,14 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
+      <div className="flex">
+      <CircularImg />
         <Link to="/">
           <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-            {brandName}
+           {brandName}
           </Typography>
         </Link>
+        </div>
         <div className="hidden lg:block">{navList}</div>
         <IconButton
           variant="text"
@@ -102,7 +106,7 @@ Navbar.defaultProps = {
   brandName: "Bhoomi AI",
   action: (
     <a
-      href="https://www.creative-tim.com/product/material-tailwind-kit-react"
+      href="https://bhoomiai.com/"
       target="_blank"
     >
     </a>

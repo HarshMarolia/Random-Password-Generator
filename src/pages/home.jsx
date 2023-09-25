@@ -13,6 +13,9 @@ import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
+import image4 from '../img/image4.jpg';
+import fasal from '../img/fasal.png';
+import { ImgWithRoundedCorners } from "@/widgets/layout/imgWithRoundedCorners";
 
 export function Home() {
   return (
@@ -67,7 +70,7 @@ export function Home() {
                     {title}
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                  {description}
+                    {description}
                   </Typography>
                 </CardBody>
               </Card>
@@ -75,15 +78,15 @@ export function Home() {
           </div>
           <div className="mt-32 flex flex-wrap items-center">
             <div className="mx-auto -mt-8 w-full px-4 md:w-5/12">
-              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+              {/* <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
-              </div>
+              </div> */}
               <Typography
                 variant="h3"
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Working with us is a pleasure
+                Solutions for the Farming Community
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
                 Don't let your uses guess by attaching tooltips and popoves to
@@ -95,14 +98,14 @@ export function Home() {
                 faster. You can change the text and images and you're good to
                 go. Just make sure you enable them first via JavaScript.
               </Typography>
-              <Button variant="outlined">read more</Button>
+              {/* <Button variant="outlined">read more</Button> */}
             </div>
             <div className="mx-auto mt-24 flex w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <Card className="shadow-lg shadow-gray-500/10">
                 <CardHeader className="relative h-56">
                   <img
                     alt="Card Image"
-                    src="/img/teamwork.jpeg"
+                    src={image4}
                     className="h-full w-full"
                   />
                 </CardHeader>
@@ -112,20 +115,41 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Top Notch Services
+                    Soil Health
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    The Arctic Ocean freezes every winter and much of the
-                    sea-ice then thaws every summer, and that process will
-                    continue whatever happens.
+                    Soil nutrient, its features and suitable crop suggestion based on few images of your Crop.
                   </Typography>
                 </CardBody>
               </Card>
             </div>
           </div>
+          {/* Second */}
+          {/* <section className="relative  py-24 px-4"></section> */}
+          <div className="mt-32 flex flex-wrap items-center bg-blue-gray-50/50">
+            <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <ImgWithRoundedCorners source={fasal} />
+            </div>
+            <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
+              <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
+                <UsersIcon className="h-6 w-6 text-blue-gray-900" />
+              </div>
+              <Typography
+                variant="h3"
+                className="mb-3 font-bold"
+                color="blue-gray"
+              >
+                Solutions for the Farming Community
+              </Typography>
+              <Typography className="mb-8 font-normal text-blue-gray-500">
+                We provide an independent assessment of the crop damage due to natural calamities as well as pest attack. Send us your images at different stages to make estimation of the crop loss.
+              </Typography>
+              {/* <Button variant="outlined">read more</Button> */}
+            </div>
+          </div>
         </div>
       </section>
-      <section className="px-4 pt-20 pb-48">
+      {/* <section className="px-4 pt-20 pb-48">
         <div className="container mx-auto">
           <PageTitle heading="Here are our heroes">
             According to the National Oceanic and Atmospheric Administration,
@@ -196,7 +220,7 @@ export function Home() {
             </Button>
           </form>
         </div>
-      </section>
+      </section> */}
       <div className="bg-blue-gray-50/50">
         <Footer />
       </div>

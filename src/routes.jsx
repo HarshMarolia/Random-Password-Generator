@@ -1,36 +1,36 @@
-import { Home, Profile, SignIn, SignUp } from "@/pages";
+import { Home, About, Services, Contact } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
   ArrowRightOnRectangleIcon,
   UserPlusIcon,
-  DocumentTextIcon,
+  CogIcon,
 } from "@heroicons/react/24/solid";
 
 export const routes = [
   {
     icon: HomeIcon,
     name: "home",
-    path: "/home",
+    path: "/",
     element: <Home />,
   },
   {
     icon: UserCircleIcon,
     name: "About Us",
-    path: "/profile",
-    element: <Profile />,
+    path: "/about",
+    element: <About />,
   },
   {
-    icon: ArrowRightOnRectangleIcon,
-    name: "Sign In",
-    path: "/sign-in",
-    element: <SignIn />,
+    icon: CogIcon,
+    name: "Services",
+    path: "/services",
+    element: <Services />,
   },
   {
     icon: UserPlusIcon,
-    name: "Sign Up",
-    path: "/sign-up",
-    element: <SignUp />,
+    name: "Contact",
+    path: "/contact",
+    element: <Contact />,
   },
 ];
 
