@@ -48,78 +48,69 @@ export function Services() {
                 </div> */}
               </div>
 
-              <div className="mt-10 flex flex-wrap items-center ">
-                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <div className="mt-10 flex flex-wrap items-center">
+                <div className="mx-auto sm:mt-12 lg:mt-10 flex lg:basis-3/6 w-full justify-center px-4 sm:w-4/12 md:w-4/12 lg:w-4/12 xl:w-3/12">
                   <img
                     className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                     src={service1}
                     alt="nature image"
                   />
                 </div>
-                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
-                  <Typography
-                    variant="h3"
-                    className="mb-3 font-bold"
-                    color="blue-gray"
-                  >
+                <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
+                  <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
                     Pest Check List
                   </Typography>
-                  <Typography className="mb-8 font-normal text-blue-gray-500">
-                    Fill out the details and upload images of Pest on our Google Form or WhatsApp to get a detailed assessment on nature of pest, insect affecting your farm. Also, our report includes nature and quantity of Pesticide treatment to solve your problem.
+                  <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
+                    Fill out the details and upload images of Pest on our Google Form or WhatsApp to get a detailed assessment on the nature of pests and insects affecting your farm. Also, our report includes the nature and quantity of pesticide treatment to solve your problem.
                   </Typography>
-                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7"><Button variant="outlined">Please fill the form</Button></a>
+                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7">
+                    <Button variant="outlined">Please fill the form</Button>
+                  </a>
                 </div>
               </div>
               {/* Service 2 */}
-              <div className="mt-24 flex flex-wrap items-center">
-                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <div className="mt-10 sm:mt-24 lg:mt-24 flex flex-wrap items-center">
+                <div className="mx-auto mt-6 sm:mt-12 lg:mt-0 flex lg:basis-3/6 w-full justify-center px-4 sm:w-4/12 md:w-4/12 lg:w-4/12 xl:w-3/12">
                   <img
                     className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                     src={service2}
                     alt="nature image"
                   />
                 </div>
-                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
-                  <Typography
-                    variant="h3"
-                    className="mb-3 font-bold"
-                    color="blue-gray"
-                  >
+                <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
+                  <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
                     Crop Health Check
                   </Typography>
-                  <Typography className="mb-8 font-normal text-blue-gray-500">
-                    With our AI/ML program and vast database of crop yield, we can do accurate assessment of the crop yield for your Crop.
-                    Upload few images and share the details of the crop location, soil, etc. to get accurate estimation.
+                  <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
+                    With our AI/ML program and vast database of crop yield, we can do an accurate assessment of the crop yield for your Crop. Upload a few images and share the details of the crop location, soil, etc., to get an accurate estimation.
                   </Typography>
-                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7"><Button variant="outlined">Please fill the form</Button></a>
+                  <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7">
+                    <Button variant="outlined">Please fill the form</Button>
+                  </a>
                 </div>
               </div>
               {/* Service 3 */}
-              <div className="mt-24 mb-10 flex flex-wrap items-center">
-                <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
+              <div className="mt-10 sm:mt-24 flex flex-wrap items-center">
+                <div className="mx-auto mt-6 sm:mt-12 lg:mt-0 flex lg:basis-3/6 w-full justify-center px-4 sm:w-4/12 md:w-4/12 lg:w-4/12 xl:w-3/12">
                   <img
                     className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                     src={service3}
                     alt="nature image"
                   />
                 </div>
-                <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
-                  <Typography
-                    variant="h3"
-                    className="mb-3 font-bold"
-                    color="blue-gray"
-                  >
+                <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
+                  <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
                     BUY INSURANCE FOR YOUR CROP
                   </Typography>
-                  <Typography className="mb-8 font-normal text-blue-gray-500">
-                    Crop insurance is essential for Doubling Farmers Income. We aim to enable every farmers to purchase crop insurance.
-                    <br />
-                    <br />
-                    Our team developing a scientific assessment for crop damage assessment. It includes handholding support to farmers in linking to crop insurance companies.
+                  <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
+                    Crop insurance is essential for doubling farmers' income. We aim to enable every farmer to purchase crop insurance. Our team is developing a scientific assessment for crop damage assessment. It includes handholding support to farmers in linking to crop insurance companies.
                   </Typography>
-                  <a href="https://pmfby.gov.in/"><Button variant="outlined">Purchase Crop Insurance</Button></a>
+                  <a href="https://pmfby.gov.in/">
+                    <Button variant="outlined">Purchase Crop Insurance</Button>
+                  </a>
                 </div>
               </div>
+
             </div>
           </div>
         </div>

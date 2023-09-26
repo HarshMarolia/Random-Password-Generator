@@ -21,6 +21,10 @@ export function Navbar({ brandName, routes, action }) {
     );
   }, []);
 
+  const closeNav = () => {
+    setOpenNav(false);
+  };
+
   const navList = (
     <ul className="mb-4 mt-2 flex flex-col gap-2 text-inherit lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
       {routes.map(({ name, path, icon, href, target }) => (
@@ -36,6 +40,7 @@ export function Navbar({ brandName, routes, action }) {
               href={href}
               target={target}
               className="flex items-center gap-1 p-1 font-normal"
+              onClick={closeNav} // Close the navbar when a link is clicked
             >
               {icon &&
                 React.createElement(icon, {
@@ -48,6 +53,7 @@ export function Navbar({ brandName, routes, action }) {
               to={path}
               target={target}
               className="flex items-center gap-1 p-1 font-normal"
+              onClick={closeNav} // Close the navbar when a link is clicked
             >
               {icon &&
                 React.createElement(icon, {
@@ -64,13 +70,13 @@ export function Navbar({ brandName, routes, action }) {
   return (
     <MTNavbar color="transparent" className="p-3">
       <div className="container mx-auto flex items-center justify-between text-white">
-      <div className="flex">
-      <CircularImg />
-        <Link to="/">
-          <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
-           {brandName}
-          </Typography>
-        </Link>
+        <div className="flex">
+          <CircularImg />
+          <Link to="/">
+            <Typography className="mr-4 ml-2 cursor-pointer py-1.5 font-bold">
+              {brandName}
+            </Typography>
+          </Link>
         </div>
         <div className="hidden lg:block">{navList}</div>
         <IconButton

@@ -44,7 +44,7 @@ export function Contact() {
               <div className="border-t border-blue-gray-50 py-6 text-center">
                 <div className="mt-2 flex flex-wrap justify-center">
                   <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
-                    <Typography className="font-normal text-blue-gray-500">
+                    <Typography className="font-normal text-blue-gray-500 md:w-full">
                       Let’s talk 👋 Don’t hesitate to reach out with the contact information below, or send a message using the form.
                     </Typography>
                   </div>
@@ -55,8 +55,8 @@ export function Contact() {
                 <PageTitle heading="Want to work with us?">
                   Complete this form and we will get back to you in 24 hours.
                 </PageTitle>
-                <form ref={form} onSubmit={sendEmail} className="mx-auto p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50">
-                  <div className="mb-8 flex gap-8">
+                {/* <form ref={form} onSubmit={sendEmail} className="mx-auto p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50">
+                  <div className="mb-8 flex gap-8 sm:flex-col">
                     <Input type="text" variant="standard" size="lg" name='name' label="Full Name" />
                     <Input type="email" variant="standard" size="lg" name="email" label="Email Address" />
                   </div>
@@ -64,7 +64,26 @@ export function Contact() {
                   <Button type='submit' variant="gradient" size="lg" className="mt-8">
                     Send Message
                   </Button>
+                </form> */}
+                <form
+                  ref={form}
+                  onSubmit={sendEmail}
+                  className="mx-auto p-5 sm:p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50"
+                >
+                  <div className="mb-4 sm:mb-8 flex flex-col sm:flex-row sm:gap-8">
+                    <div className="sm:w-1/2">
+                      <Input type="text" variant="standard" size="lg" name="name" label="Full Name" />
+                    </div>
+                    <div className="sm:w-1/2">
+                      <Input type="email" variant="standard" size="lg" name="email" label="Email Address" />
+                    </div>
+                  </div>
+                  <Textarea name="message" variant="standard" size="lg" label="Message" rows={6} />
+                  <Button type="submit" variant="gradient" size="lg" className="mt-4 sm:mt-8">
+                    Send Message
+                  </Button>
                 </form>
+
               </div>
             </div>
           </div>
