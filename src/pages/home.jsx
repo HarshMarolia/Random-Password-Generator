@@ -89,14 +89,10 @@ export function Home() {
                 Solutions for the Farming Community
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Don't let your uses guess by attaching tooltips and popoves to
-                any element. Just make sure you enable them first via
-                JavaScript.
-                <br />
-                <br />
-                The kit comes with three pre-built pages to help you get started
-                faster. You can change the text and images and you're good to
-                go. Just make sure you enable them first via JavaScript.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facilis deleniti temporibus harum mollitia
+                incidunt beatae dolores ducimus. Alias eos excepturi quas maiores expedita quod dolor aliquid adipisci odit
+                asperiores possimus laudantium beatae, tenetur at, vitae voluptate incidunt dolore voluptas optio quam quibusdam
+                nobis autem! Earum illum odit voluptate tempore.
               </Typography>
               {/* <Button variant="outlined">read more</Button> */}
             </div>
@@ -130,7 +126,7 @@ export function Home() {
             <div className="mx-auto mt-24 flex lg:basis-3/6 w-full justify-center px-4 md:w-4/12 lg:mt-0">
               <ImgWithRoundedCorners source={fasal} />
             </div>
-            <div className="mx-auto lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
+            <div className="mx-auto pb-20 lg:basis-2/5 -mt-8 w-full px-4 md:w-5/12">
               <div className="mb-6 inline-flex h-16 w-16 items-center justify-center rounded-full bg-white p-3 text-center shadow-lg">
                 <UsersIcon className="h-6 w-6 text-blue-gray-900" />
               </div>
@@ -139,7 +135,7 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Solutions for the Farming Community
+                INSURANCE IS KEY TO FINANCIAL INDEPENDENCE OF FARMERS
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
                 We provide an independent assessment of the crop damage due to natural calamities as well as pest attack. Send us your images at different stages to make estimation of the crop loss.

@@ -1,11 +1,12 @@
-import { Home, About, Services, Contact } from "@/pages";
+import { Home, About, Services, Contact, Timeline } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
-  ArrowRightOnRectangleIcon,
+  ArrowTrendingUpIcon,
   UserPlusIcon,
   CogIcon,
 } from "@heroicons/react/24/solid";
+
 
 export const routes = [
   {
@@ -31,6 +32,12 @@ export const routes = [
     name: "Contact",
     path: "/contact",
     element: <Contact />,
+  },
+  {
+    icon: ArrowTrendingUpIcon,
+    name: "Timeline",
+    path: "/timeline",
+    element: <Timeline />,
   },
 ];
 
