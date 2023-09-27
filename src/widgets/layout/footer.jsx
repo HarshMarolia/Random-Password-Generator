@@ -1,9 +1,32 @@
 import PropTypes from "prop-types";
 import { Typography, IconButton } from "@material-tailwind/react";
+import { useTranslation } from "react-i18next";
 
 const year = new Date().getFullYear();
 
 export function Footer({ title, description, socials, menus, copyright }) {
+  const [t, i18n] = useTranslation("global")
+  title = t("footer.h1");
+  description = t("footer.h2");
+  menus = [
+    {
+      name: t("footer.h3"),
+      items: [
+        { name: "communications@bhoomiai.com", path: "mailto:communications@bhoomiai.com" },
+        { name: "+91-7903873487", path: "tel: 7903873487" },
+      ],
+    },
+    {
+      name: t("footer.h4"),
+      items: [
+        {
+          name: t("footer.h5"),
+          path: "",
+        },
+      ],
+    },
+  ]
+
   return (
     <footer className="relative px-4 pt-8 pb-6">
       <div className="container mx-auto">

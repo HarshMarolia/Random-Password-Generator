@@ -15,7 +15,7 @@ const LanguageDropdown = () => {
                 </button>
                 <ul className="dropdown-menu">
                     <li><button className="dropdown-item" onClick={()=>{languageHandler("en")}}>English</button></li>
-                    <li><button className="dropdown-item" onClick={()=>{languageHandler("hi")}}>Hindi</button></li>
+                    <li><button className="dropdown-item" onClick={()=>{languageHandler("hi")}}>हिन्दी</button></li>
                     {/* <li><a className="dropdown-item" href="#">Something else here</a></li> */}
                 </ul>
             </div>

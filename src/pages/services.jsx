@@ -6,9 +6,11 @@ import service1 from '../img/image1.jpg';
 import service2 from '../img/image3.jpg';
 import service3 from '../img/fasal.png';
 import { ImgWithRoundedCorners } from "@/widgets/layout/imgWithRoundedCorners";
+import { useTranslation } from "react-i18next";
 
 
 export function Services() {
+  const [t, i18n] = useTranslation("global")
   return (
     <>
       <section className="relative block h-[50vh]">
@@ -35,7 +37,7 @@ export function Services() {
               </div>
               <div className="my-8 text-center">
                 <Typography variant="h2" color="blue-gray" className="mb-2">
-                  Services
+                {t("services.h1")}
                 </Typography>
               </div>
               <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">
@@ -58,13 +60,13 @@ export function Services() {
                 </div>
                 <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
                   <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
-                    Pest Check List
+                  {t("services.h2")}
                   </Typography>
                   <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
-                    Fill out the details and upload images of Pest on our Google Form or WhatsApp to get a detailed assessment on the nature of pests and insects affecting your farm. Also, our report includes the nature and quantity of pesticide treatment to solve your problem.
+                  {t("services.h3")}
                   </Typography>
                   <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7">
-                    <Button variant="outlined">Please fill the form</Button>
+                    <Button variant="outlined">{t("services.h4")}</Button>
                   </a>
                 </div>
               </div>
@@ -79,18 +81,18 @@ export function Services() {
                 </div>
                 <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
                   <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
-                    Crop Health Check
+                  {t("services.h5")}
                   </Typography>
                   <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
-                    With our AI/ML program and vast database of crop yield, we can do an accurate assessment of the crop yield for your Crop. Upload a few images and share the details of the crop location, soil, etc., to get an accurate estimation.
+                  {t("services.h6")}
                   </Typography>
                   <a href="https://forms.gle/VwZxzQ1NC1b9uNHC7">
-                    <Button variant="outlined">Please fill the form</Button>
+                    <Button variant="outlined">{t("services.h4")}</Button>
                   </a>
                 </div>
               </div>
               {/* Service 3 */}
-              <div className="mt-10 sm:mt-24 flex flex-wrap items-center">
+              <div className="my-10 sm:mt-24 flex flex-wrap items-center">
                 <div className="mx-auto mt-6 sm:mt-12 lg:mt-0 flex lg:basis-3/6 w-full justify-center px-4 sm:w-4/12 md:w-4/12 lg:w-4/12 xl:w-3/12">
                   <img
                     className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
@@ -100,13 +102,13 @@ export function Services() {
                 </div>
                 <div className="mx-auto lg:basis-2/5 w-full sm:w-5/12 md:w-5/12 lg:w-5/12 xl:w-6/12 px-4 mt-4 sm:mt-0">
                   <Typography variant="h3" className="mb-3 font-bold" color="blue-gray">
-                    BUY INSURANCE FOR YOUR CROP
+                  {t("services.h8")}
                   </Typography>
                   <Typography className="mb-4 sm:mb-8 font-normal text-blue-gray-500">
-                    Crop insurance is essential for doubling farmers' income. We aim to enable every farmer to purchase crop insurance. Our team is developing a scientific assessment for crop damage assessment. It includes handholding support to farmers in linking to crop insurance companies.
+                  {t("services.h9")}
                   </Typography>
                   <a href="https://pmfby.gov.in/">
-                    <Button variant="outlined">Purchase Crop Insurance</Button>
+                    <Button variant="outlined">{t("services.h10")}</Button>
                   </a>
                 </div>
               </div>

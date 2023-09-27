@@ -13,14 +13,39 @@ import { UsersIcon } from "@heroicons/react/24/solid";
 import { PageTitle, Footer } from "@/widgets/layout";
 import { FeatureCard, TeamCard } from "@/widgets/cards";
 import { featuresData, teamData, contactData } from "@/data";
-import image4 from '../img/image4.jpg';
 import fasal from '../img/fasal.png';
 import { ImgWithRoundedCorners } from "@/widgets/layout/imgWithRoundedCorners";
 import { useTranslation } from "react-i18next";
+import image1 from '../img/image1.jpg';
+import image2 from '../img/image2.jpg';
+import image3 from '../img/image3.jpg';
+import image4 from '../img/image4.jpg';
 
 
 export function Home() {
   const [t, i18n] = useTranslation("global")
+
+  const featuresData = [
+    {
+      color: "blue",
+      title: t("home.h3"),
+      icon: image1,
+      description: t("home.h8"),
+    },
+    {
+      color: "red",
+      title: t("home.h4"),
+      icon: image2,
+      description: t("home.h9"),
+    },
+    {
+      color: "teal",
+      title: t("home.h5"),
+      icon: image3,
+      description: t("home.h10"),
+    },
+  ];
+
   return (
     <>
       <div className="relative flex h-screen content-center items-center justify-center pt-16 pb-32">
@@ -37,7 +62,7 @@ export function Home() {
                 {t("home.h1")}
               </Typography>
               <Typography variant="lead" color="white" className="opacity-80">
-              {t("home.h2")}
+                {t("home.h2")}
               </Typography>
             </div>
           </div>
@@ -89,13 +114,10 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                Solutions for the Farming Community
+                {t("home.h7")}
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facilis deleniti temporibus harum mollitia
-                incidunt beatae dolores ducimus. Alias eos excepturi quas maiores expedita quod dolor aliquid adipisci odit
-                asperiores possimus laudantium beatae, tenetur at, vitae voluptate incidunt dolore voluptas optio quam quibusdam
-                nobis autem! Earum illum odit voluptate tempore.
+              {t("home.h13")}
               </Typography>
               {/* <Button variant="outlined">read more</Button> */}
             </div>
@@ -114,10 +136,10 @@ export function Home() {
                     color="blue-gray"
                     className="mb-3 font-bold"
                   >
-                    Soil Health
+                    {t("home.h6")}
                   </Typography>
                   <Typography className="font-normal text-blue-gray-500">
-                    Soil nutrient, its features and suitable crop suggestion based on few images of your Crop.
+                    {t("home.h11")}
                   </Typography>
                 </CardBody>
               </Card>
@@ -138,10 +160,10 @@ export function Home() {
                 className="mb-3 font-bold"
                 color="blue-gray"
               >
-                INSURANCE IS KEY TO FINANCIAL INDEPENDENCE OF FARMERS
+                {t("home.h14")}
               </Typography>
               <Typography className="mb-8 font-normal text-blue-gray-500">
-                We provide an independent assessment of the crop damage due to natural calamities as well as pest attack. Send us your images at different stages to make estimation of the crop loss.
+              {t("home.h15")}
               </Typography>
               {/* <Button variant="outlined">read more</Button> */}
             </div>

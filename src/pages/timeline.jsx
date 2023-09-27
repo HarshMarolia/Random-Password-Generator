@@ -4,9 +4,10 @@ import { Footer } from "@/widgets/layout";
 // import { UsersIcon } from "@heroicons/react/24/solid";
 import img1 from '../img/image5.jpg';
 import img2 from '../img/image6.jpg';
-
+import { useTranslation } from "react-i18next";
 
 export function Timeline() {
+    const [t, i18n] = useTranslation("global")
     return (
         <>
             <section className="relative block h-[50vh]">
@@ -33,7 +34,7 @@ export function Timeline() {
                             </div>
                             <div className="my-8 text-center">
                                 <Typography variant="h2" color="blue-gray" className="mb-2">
-                                    Our Timeline
+                                {t("timeline.h1")}
                                 </Typography>
                             </div>
                             <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">

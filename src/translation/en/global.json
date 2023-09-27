@@ -1,5 +1,5 @@
 {
-    "nav":{
+    "nav": {
         "h1": "Home",
         "h2": "About Us",
         "h3": "Services",
@@ -7,8 +7,71 @@
         "h5": "TimeLine",
         "h6": "Language"
     },
-    "home":{
+    "home": {
         "h1": "Turning Imagination Into Reality",
-        "h2": "Get Holistic Solution For Your Crop"
+        "h2": "Get Holistic Solution For Your Crop",
+        "h3": "Pesticide Check",
+        "h4": "Talk to Expert",
+        "h5": "Crop Health",
+        "h6": "Soil Health",
+        "h7": "Solutions for the Farming Community",
+        "h8": "Our Machine Learning model detects the harmful insect and suggest a solution to treat them.",
+        "h9": "Talk to our expert agricultural scientists and researcher to solve your specific requirements.",
+        "h10": "Estimation of the crop health using the few images of the crop.",
+        "h11": "Soil nutrient, its features and suitable crop suggestion based on few images of your Crop.",
+        "h12": "Solutions for the Farming Community",
+        "h13": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam facilis deleniti temporibus harum mollitia incidunt beatae dolores ducimus. Alias eos excepturi quas maiores expedita quod dolor aliquid adipisci odit asperiores possimus laudantium beatae, tenetur at, vitae voluptate incidunt dolore voluptas optio quam quibusdam nobis autem! Earum illum odit voluptate tempore.",
+        "h14": "INSURANCE IS KEY TO FINANCIAL INDEPENDENCE OF FARMERS",
+        "h15": "We provide an independent assessment of the crop damage due to natural calamities as well as pest attack. Send us your images at different stages to make estimation of the crop loss."
+    },
+    "contact": {
+        "h1": "Contact Us",
+        "h2": "Let’s talk 👋 Don’t hesitate to reach out with the contact information below, or send a message using the form.",
+        "h3": "Want to work with us?",
+        "h4": "Complete this form and we will get back to you in 24 hours.",
+        "h5": "Full Name",
+        "h6": "Email",
+        "h7": "Message",
+        "h8": "Send message"
+    },
+    "services": {
+        "h1": "Services",
+        "h2": "Pest Check List",
+        "h3": "Fill out the details and upload images of Pest on our Google Form or WhatsApp to get a detailed assessment on the nature of pests and insects affecting your farm. Also, our report includes the nature and quantity of pesticide treatment to solve your problem.",
+        "h4": "Please fill the form",
+        "h5": "Crop Health Check",
+        "h6": "With our AI/ML program and vast database of crop yield, we can do an accurate assessment of the crop yield for your Crop. Upload a few images and share the details of the crop location, soil, etc., to get an accurate estimation.",
+        "h8": "BUY INSURANCE FOR YOUR CROP",
+        "h9": " Crop insurance is essential for doubling farmers' income. We aim to enable every farmer to purchase crop insurance. Our team is developing a scientific assessment for crop damage assessment. It includes handholding support to farmers in linking to crop insurance companies.",
+        "h10": "Purchase Crop Insurance"
+    },
+    "timeline": {
+        "h1": "Our Timeline"
+    },
+    "about": {
+        "h1": "About Us",
+        "h2": " Bhoomi AI Solutions is a tech startup with its root in rural India. Our team members have 10 years of work experience in Web 3.0, Blockchain, and large-scale AI model deployment.",
+        "h3": "Anant Kumar",
+        "h4": "Anant Kumar has MSc in Sustainable Energy and Crops from UCD Dublin. He has worked in National Chemical Laboratory, Pune (India). He worked as a project consultant for Ivory research (United Kingdom). He has done internship in Taiwan, France. He has extensive research work experience and research paper in Nature. He is currently working as a data scientist.",
+        "h5": "Anant Kumar, Founder",
+        "h6": "Anupam Kumar",
+        "h7": "Anupam Kumar has over 5 years of experience as process engineer in applying machine learning for process optimization and pipelines transport. He has MSc in chemical engineering from the University of Alberta. He founded startup company Greyjay energy on energy efficiency in Edmonton AB and raised over 1 Cr in funding from investors",
+        "h8": "Anupam Kumar, Founder",
+        "h9": "Amit Kumar Singh",
+        "h10": "Amit Kumar Singh is the owner of multiple fuel retail services across Bihar. Also, he works as a project consultant on multiple projects.",
+        "h11": "Amit Kumar Singh, Mentor",
+        "h12": "Amit Kumar",
+        "h13": "Amit Kumar is a postdoctoral researcher at the University of New Hampshire and a former Senior Project Engineer at the Indian Institute of Technology (IIT), Guwahati. Amit holds expertise in the field of Molecular Dynamics Simulations of Protein-RNA Complexes and potent to work in all sub-disciplines of Computational Biology & Chemistry.",
+        "h14": "Amit Kumar, Researcher",
+        "h15": "Janit Anjaria",
+        "h16": "Janit Anjaria is a Senior Software Engineer at Aurora Innovation Inc., where he currently works on building high-definition 3-D maps for self-driving vehicles. Before joining Aurora, he worked on the Autonomous Vehicle Maps team at Uber Advanced Technology Group.",
+        "h17": "Janit Anjaria, Data Scientist"
+    },
+    "footer": {
+        "h1": "Bhoomi AI",
+        "h2": "We are an agri-tech startup founded by the graduates and professionals from India, US, Canada.",
+        "h3": "Get In Touch",
+        "h4": "Drop By",
+        "h5": "New Delhi, India"
     }
 }
