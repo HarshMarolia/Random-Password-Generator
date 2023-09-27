@@ -43,7 +43,7 @@ export function Contact() {
                   {t("contact.h1")}
                 </Typography>
               </div>
-              <div className="border-t border-blue-gray-50 py-6 text-center">
+              <div className="py-6 text-center">
                 <div className="mt-2 flex flex-wrap justify-center">
                   <div className="flex w-full flex-col items-center px-4 lg:w-9/12">
                     <Typography className="font-normal text-blue-gray-500 md:w-full">
@@ -70,22 +70,20 @@ export function Contact() {
                 <form
                   ref={form}
                   onSubmit={sendEmail}
-                  className="mx-auto p-5 sm:p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50"
+                  className="mx-auto p-5 sm:p-10 lg:max-w-3xl md:max-w-screen-lg sm:max-w-sm text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50 sm:w-96 md:w-80"
                 >
                   <div className="mb-4 sm:mb-8 flex flex-col sm:flex-row sm:gap-8">
-                    <div className="sm:w-1/2">
-                      <Input type="text" variant="standard" size="lg" name="name" label={t("contact.h5")} />
-                    </div>
-                    <div className="sm:w-1/2">
-                      <Input type="email" variant="standard" size="lg" name="email" label={t("contact.h6")} />
+                    <div className="">
+                      <Input type="text" variant="outlined" size="lg" name="name" label={t("contact.h5")} required/>
+                      <br />
+                      <Input type="email" variant="outlined" size="lg" name="email" label={t("contact.h6")} required/>
                     </div>
                   </div>
-                  <Textarea name="message" variant="standard" size="lg" label={t("contact.h7")} rows={6} />
+                  <Textarea name="message" variant="outlined" size="lg" label={t("contact.h7")} rows={6} />
                   <Button type="submit" variant="gradient" size="lg" className="mt-4 sm:mt-8">
                     {t("contact.h8")}
                   </Button>
                 </form>
-
               </div>
             </div>
           </div>
