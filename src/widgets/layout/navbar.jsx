@@ -10,15 +10,19 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
+import LanguageDropdown from "./languageDropdown";
+import { useTranslation } from "react-i18next";
 
 export function Navbar({ brandName, routes, action }) {
   const [openNav, setOpenNav] = React.useState(false);
+  const [t, i18n] = useTranslation("global")
 
   React.useEffect(() => {
     window.addEventListener(
       "resize",
       () => window.innerWidth >= 960 && setOpenNav(false)
     );
+    console.log('click');
   }, []);
 
   const closeNav = () => {
@@ -64,6 +68,15 @@ export function Navbar({ brandName, routes, action }) {
           )}
         </Typography>
       ))}
+      <Typography
+          key={"language"}
+          as="li"
+          variant="small"
+          color="inherit"
+          className="capitalize"
+        >
+          <LanguageDropdown />
+        </Typography>
     </ul>
   );
 

@@ -1,0 +1,14 @@
+{
+    "nav":{
+        "h1": "Home",
+        "h2": "About Us",
+        "h3": "Services",
+        "h4": "Contact",
+        "h5": "TimeLine",
+        "h6": "Language"
+    },
+    "home":{
+        "h1": "Turning Imagination Into Reality",
+        "h2": "Get Holistic Solution For Your Crop"
+    }
+}
