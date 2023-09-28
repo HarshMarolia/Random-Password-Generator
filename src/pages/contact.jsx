@@ -57,29 +57,20 @@ export function Contact() {
                 <PageTitle heading={t("contact.h3")} >
                   {t("contact.h4")}
                 </PageTitle>
-                {/* <form ref={form} onSubmit={sendEmail} className="mx-auto p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50">
-                <div className="mb-8 flex gap-8 sm:flex-col">
-                  <Input type="text" variant="standard" size="lg" name='name' label="Full Name" />
-                  <Input type="email" variant="standard" size="lg" name="email" label="Email Address" />
-                </div>
-                <Textarea name="message" variant="standard" size="lg" label="Message" rows={6} />
-                <Button type='submit' variant="gradient" size="lg" className="mt-8">
-                  Send Message
-                </Button>
-              </form> */}
                 <form
                   ref={form}
                   onSubmit={sendEmail}
-                  className="mx-auto p-5 sm:p-10 lg:max-w-3xl md:max-w-screen-lg sm:max-w-sm text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50 sm:w-96 md:w-80"
+                  className="mx-auto p-4 sm:p-10 mt-12 max-w-3xl text-center rounded-lg object-center shadow-xl shadow-blue-gray-900/50"
                 >
                   <div className="mb-4 sm:mb-8 flex flex-col sm:flex-row sm:gap-8">
-                    <div className="">
-                      <Input type="text" variant="outlined" size="lg" name="name" label={t("contact.h5")} required/>
-                      <br />
-                      <Input type="email" variant="outlined" size="lg" name="email" label={t("contact.h6")} required/>
+                    <div className="sm:w-1/2 mb-2">
+                      <Input type="text" variant="standard" size="sm" name="name" label={t("contact.h5")} />
+                    </div>
+                    <div className="sm:w-1/2">
+                      <Input type="email" variant="standard" size="sm" name="email" label={t("contact.h6")} />
                     </div>
                   </div>
-                  <Textarea name="message" variant="outlined" size="lg" label={t("contact.h7")} rows={6} />
+                  <Textarea name="message" variant="standard" size="lg" label={t("contact.h7")} rows={6} />
                   <Button type="submit" variant="gradient" size="lg" className="mt-4 sm:mt-8">
                     {t("contact.h8")}
                   </Button>
