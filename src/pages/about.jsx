@@ -137,7 +137,7 @@ export function About() {
                     <CardHeader className="relative h-56">
                       <img
                         alt="Card Image"
-                        src={img3}
+                        src={img5}
                         className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                       />
                     </CardHeader>
@@ -205,7 +205,7 @@ export function About() {
                     <CardHeader className="relative h-56">
                       <img
                         alt="Card Image"
-                        src={img5}
+                        src={img3}
                         className="h-full w-full rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
                       />
                     </CardHeader>

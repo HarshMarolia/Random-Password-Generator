@@ -35,7 +35,7 @@ export function SimpleFooter({ brandName, brandLink, routes }) {
             </li>
           ))}
         </ul>
-      </div>
+      </div> 
     </footer>
   );
 }

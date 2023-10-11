@@ -10,7 +10,7 @@ export function Contact() {
   const [t, i18n] = useTranslation("global")
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_3upuard', 'template_ef863sf', form.current, 'JlZWvS1PsWFIw_1oO')
+    emailjs.sendForm('service_2fb3q73', 'template_gqatbch', form.current, 'lCXuxw0z9JeGiZ5Ih')
     e.target.reset();
   };
 

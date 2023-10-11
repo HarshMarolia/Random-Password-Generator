@@ -170,6 +170,22 @@ export function Home() {
           </div>
         </div>
       </section>
+      <section className="px-4 pt-20 pb-24">
+        <div className="container mx-auto"> 
+          <PageTitle heading="Our Supporters">
+          </PageTitle>
+          <div className="mt-24 grid grid-cols-1 gap-10 gap-x-24 md:grid-cols-2 xl:grid-cols-2 xl:px-64">
+            {/* if you want to add more supporters then just remove xl:px-64 from above */}
+            {teamData.map(({ img, name }) => (
+              <TeamCard
+                key={name}  
+                img={img}
+                name={name}
+              />
+            ))}
+          </div>
+        </div>
+      </section>
       <div className="bg-blue-gray-50/50">
         <Footer />
       </div>

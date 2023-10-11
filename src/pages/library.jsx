@@ -1,12 +1,16 @@
-import { Card, CardBody, CardHeader, Avatar, Typography, Button } from "@material-tailwind/react";
+import { Card, CardBody, CardHeader, Avatar,IconButton, Typography, Button } from "@material-tailwind/react";
 import React from "react";
-import { Footer } from "@/widgets/layout";
+
 // import { UsersIcon } from "@heroicons/react/24/solid";
+import { featuresData, teamData, contactData } from "@/data";
 import img1 from '../img/image5.jpg';
 import img2 from '../img/image6.jpg';
 import { useTranslation } from "react-i18next";
+import { PageTitle, Footer } from "@/widgets/layout";
+import { FeatureCard, TeamCard } from "@/widgets/cards";
 
-export function Timeline() {
+
+export function Library() {
     const [t, i18n] = useTranslation("global")
     return (
         <>
@@ -34,26 +38,35 @@ export function Timeline() {
                             </div>
                             <div className="my-8 text-center">
                                 <Typography variant="h2" color="blue-gray" className="mb-2">
-                                {t("timeline.h1")}
+                                    {t("library.h1")}
                                 </Typography>
                             </div>
-                            <div className="mb-10 border-t border-blue-gray-50 py-6 text-center">
-                                {/* Horzontal line */}
-                            </div>
-                            {/* Image 1 */}
+                            <section className="px-4 pt-20 pb-48">
+                                <div className="container mx-auto">
+                                    <PageTitle heading="Our Supporters">
+                                    </PageTitle>
+                                    <div className="mt-24 grid grid-cols gap-10 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+                                        {teamData.map(({ img, name, socials }) => (
+                                            <TeamCard
+                                                key={name}
+                                                img={img}
+                                                name={name}
+                                                //position={position}
+                                                socials={
+                                                    <div className="flex items-center gap-2">
+                                                        {socials.map(({ color, name }) => (
+                                                            <IconButton key={name} color={color} variant="text">
+                                                                <i className={`fa-brands text-lg fa-${name}`} />
+                                                            </IconButton>
+                                                        ))}
+                                                    </div>
+                                                }
+                                            />
+                                        ))}
+                                    </div>
+                                </div>
+                            </section>
 
-                            <img
-                                className="h-90 w-90 my-10 mb-5 mx-auto rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
-                                src={img1}
-                                alt="timeline image"
-                            />
-
-                            {/* Image 2 */}
-                            <img
-                                className="h-90 w-90 my-10 mx-auto rounded-lg object-cover object-center shadow-xl shadow-blue-gray-900/50"
-                                src={img2}
-                                alt="timeline image"
-                            />
 
                         </div>
                     </div>
@@ -66,4 +79,4 @@ export function Timeline() {
     );
 }
 
-export default Timeline;
+export default Library;

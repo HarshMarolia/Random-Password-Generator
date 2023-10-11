@@ -1,11 +1,11 @@
 import { Routes, Route, Navigate } from "react-router-dom";
 import { Navbar } from "@/widgets/layout";
 // import routes from "@/routes";
-import { Home, About, Services, Contact, Timeline } from "@/pages";
+import { Home, About, Services, Contact, Library } from "@/pages";
 import {
   HomeIcon,
   UserCircleIcon,
-  ArrowTrendingUpIcon,
+  BuildingLibraryIcon,
   UserPlusIcon,
   CogIcon,
 } from "@heroicons/react/24/solid";
@@ -39,10 +39,10 @@ function App() {
       element: <Contact />,
     },
     {
-      icon: ArrowTrendingUpIcon,
+      icon: BuildingLibraryIcon,
       name: t("nav.h5"),
-      path: "/timeline",
-      element: <Timeline />,
+      path: "/library",
+      element: <Library />,
     },
   ];
   return (

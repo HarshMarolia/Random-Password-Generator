@@ -152,9 +152,9 @@ Footer.defaultProps = {
       path: "https://www.instagram.com/creativetimofficial/",
     },
     {
-      color: "red",
-      name: "youtube",
-      path: "https://www.youtube.com/channel/UCVyTG4sCw-rOvB9oHkzZD1w",
+      color: "blue",
+      name: "linkedin",
+      path: "https://www.linkedin.com/company/bhoomi-ai/",
     },
     {
       color: "green",
