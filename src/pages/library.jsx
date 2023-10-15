@@ -45,7 +45,7 @@ export function Library() {
                                 <div className="container mx-auto">
                                     <PageTitle heading="Our Supporters">
                                     </PageTitle>
-                                    <div className="mt-24 grid grid-cols gap-10 gap-x-24 md:grid-cols-2 xl:grid-cols-4">
+                                    <div className="mt-24 grid grid-cols gap-10 gap-x-24 md:grid-cols-2 xl:grid-cols-3">
                                         {teamData.map(({ img, name, socials }) => (
                                             <TeamCard
                                                 key={name}

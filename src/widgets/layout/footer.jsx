@@ -159,7 +159,7 @@ Footer.defaultProps = {
     {
       color: "green",
       name: "whatsapp",
-      path: "https://www.whatsapp.com/",
+      path: "https://api.whatsapp.com/send?phone=+919334487640",
     },
   ],
   menus: [
